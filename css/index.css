@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{ 
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
     background: url(../img/1209629.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,11 +14,37 @@ body{
     background-attachment: fixed; 
 }
 
-h1 {
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: row;
+    gap: 10px;
+}
+
+nav > ul > li > a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.container > h1 {
     font-family: 'Lobster', cursive;
     color: rgb(70, 70, 70);
     font-size: 12em;
     letter-spacing: 10px;
     color: rgb(54, 54, 54); 
     text-shadow: rgb(92, 92, 92) 0.1em 0.1em 0.2em
+    
 }
