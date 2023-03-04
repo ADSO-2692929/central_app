@@ -45,6 +45,6 @@ nav > ul > li > a {
     font-size: 12em;
     letter-spacing: 10px;
     color: rgb(54, 54, 54); 
-    text-shadow: rgb(92, 92, 92) 0.1em 0.1em 0.2em
-    
+    text-shadow: rgb(92, 92, 92) 0.1em 0.1em 0.2em;
+    margin: auto;
 }
