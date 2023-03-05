@@ -54,3 +54,25 @@ nav > ul > li > a, .logo {
     text-shadow: rgb(92, 92, 92) 0.1em 0.1em 0.2em;
     margin: auto;
 }
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+.float:hover {
+    transform: scale(1.5);
+    animation-play-state: paused;
+}
+@keyframes float {
+    0% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+        transform: translatey(0px);
+    }
+    50% {
+        filter: drop-shadow(0 25px 15px 0px rgba(0,0,0,0.2));
+        transform: translatey(-30px);
+    }
+    100% {
+        filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+        transform: translatey(0px);
+    }
+}
